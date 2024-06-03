@@ -33,6 +33,10 @@ class App {
         require_once 'app/views/'.$viewName.'.php';
     }
 
+    public function loadHelper($helperName){
+        require_once 'app/helpers/'.$helperName.'_helper.php';
+    }
+
     public function getConfigItem($item){
         global $config;
         return isset($config[$item]) ? $config[$item] : false;

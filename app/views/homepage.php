@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Home Page</h1>
+    <h1><?=helper()?></h1>
     <h3><?=$data['visitors']?></h3>
 </body>
 </html>

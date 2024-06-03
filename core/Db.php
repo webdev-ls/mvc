@@ -60,7 +60,7 @@ class Db {
     }
         
     private function createWhere($args){
-        print_r($args); 
+        // print_r($args); 
         $args[1] = $this->conn->real_escape_string($args[1]);
         if(empty($this->where)){
             $this->where .= " WHERE `".$args[0]."` = '".$args[1]."' ";
